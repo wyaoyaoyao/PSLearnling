@@ -4,8 +4,30 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<link rel="stylesheet" href="css/index.css" type="text/css">
+	<link href="css/lanrenzhijia.css" type="text/css" rel="stylesheet" />
+
 </head>
 <body>
+<h1>jquery聚光灯效果</h1>
+<h4>鼠标滑向当前图片高亮显示，其它图片变灰</h4>
+<!-- 代码部分begin -->
+<ul id="lanrenzhijia">
+  <li><a><img  src="img/m01.jpg" /></a><i class="this_bg"></i></li>
+  <li><a><img  src="img/m02.jpg" /></a><i class="this_bg"></i></li>
+  <li><a><img  src="img/m03.jpg" /></a><i class="this_bg"></i></li>
+  <li><a><img  src="img/m04.jpg" /></a><i class="this_bg"></i></li>
+</ul>
+<script src="http://www.lanrenzhijia.com/ajaxjs/1.7.2/jquery-1.7.2.min.js"></script>
+<script>
+$(function(){
+	$("#lanrenzhijia li").hover(function(){               
+		$(this).siblings().find("i").addClass("opacity_bg");//鼠标滑过当前元素，找到他的同辈元素i,并为它加上opacity_bg类
+	},function(){                  
+		$(this).siblings().find("i").removeClass("opacity_bg");//鼠标移出当前元素，到他的同辈元素i,并移除它加上opacity_bg类景
+	})
+});
+</script>
+<!-- 代码部分end -->
 	<div class="toubu">
 		<div class="header">
 			<div class="w987">
