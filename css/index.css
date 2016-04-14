@@ -1,0 +1,58 @@
+
+html,body,ul,li{
+	margin:0;
+	padding:0;
+}
+html,body{
+	background-color:#2194d3;
+}
+*{box-sizing:border-box;}
+.toubu{
+	background-image:url(../img/fangda-02.png);
+	background-repeat:repeat-x;
+}
+.header{
+	background-image:url(../img/fangda.png);
+	background-position:center 0;
+	background-repeat:no-repeat;
+	height:460px;
+}
+.w987{
+	width:987px;
+	margin:0 auto;
+}
+.today{
+	display:inline-block;
+	border:1px solid #57addd;
+	font-size:12px;
+	color:#ffffff;
+	background-color:#1689c8;
+	padding:3px 9px 3px 5px;
+	border-radius:6px;
+	font-weight:bold;
+	margin-top:390px;
+}
+.yellow{color:#ffde00;}
+.search{
+	float:right;
+	display:block;
+	width:240px;
+	background-color:#ffffff;
+	border:1px solid #e0e0e0;
+	background-image:url(../img/fangda-01.png);
+	background-repeat:no-repeat;
+	border-radius:10px;
+	height:26px;
+	margin-top:390px;
+}
+.blue{
+	display:inline-block;
+	background-color:#007cc0;
+	border:1px solid #73b5d9;
+	color:#ffffff;
+	border-radius:7px;
+	float:right;
+	font-size:12px;
+	margin:0 1px;
+	padding:4px 5px;
+}
